@@ -1,121 +1,118 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <title>الموقع الشخصي - علي الصالح</title>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <style>
-    body {
-      font-family: "Tahoma", sans-serif;
-      background: #f9f9f9;
-      margin: 0;
-      padding: 0;
-      direction: rtl;
-    }
-    header {
-      background: linear-gradient(135deg, #2c3e50, #34495e);
-      color: white;
-      text-align: center;
-      padding: 40px 20px;
-    }
-    header h1 { margin: 0; font-size: 2.5em; }
-    header p { font-size: 1.2em; margin-top: 10px; }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>علي الصالح | إحصاء رياضي وهندسة معلوماتية</title>
     
-    section {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 30px;
-    }
-    .card {
-      background: white;
-      margin: 15px;
-      padding: 20px;
-      border-radius: 10px;
-      width: 300px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
-    }
-    .card:hover { transform: translateY(-5px); }
-    h2 { color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-    
-    /* تنسيق الأزرار الجديد */
-    .btn {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      color: #fff;
-      padding: 12px 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-bottom: 10px;
-      transition: opacity 0.3s, transform 0.2s;
-    }
-    .btn:hover { opacity: 0.9; transform: scale(1.02); }
-    
-    .btn-email    { background-color: #D44638; }
-    .btn-facebook { background-color: #1877F2; }
-    .btn-linkedIn { background-color: #0A66C2; }
+    <meta name="description" content="الموقع الشخصي لعلي الصالح، طالب متخصص في الإحصاء الرياضي وهندسة المعلوماتية.">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    .material-icons { font-size: 20px; }
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #2980b9;
+            --bg-color: #f4f7f6;
+            --whatsapp-color: #25D366;
+            --phone-color: #2ecc71;
+        }
 
-    footer {
-      background: #2c3e50;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 30px;
-    }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            margin: 0; padding: 0; direction: rtl;
+        }
 
-    @media (max-width: 768px) {
-      section { flex-direction: column; align-items: center; }
-      .card { width: 90%; }
-    }
-  </style>
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white; text-align: center; padding: 60px 20px;
+        }
+
+        /* تنسيق الصورة الشخصية */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            object-fit: cover;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        header h1 { margin: 10px 0; font-size: 2.5em; }
+
+        section {
+            display: flex; flex-wrap: wrap; justify-content: center;
+            padding: 30px; max-width: 1200px; margin: 0 auto;
+        }
+
+        .card {
+            background: white; margin: 15px; padding: 25px;
+            border-radius: 15px; width: 320px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            border-top: 5px solid var(--accent-color);
+        }
+
+        h2 { color: var(--primary-color); display: flex; align-items: center; gap: 10px; }
+
+        .btn {
+            display: flex; align-items: center; justify-content: center;
+            gap: 12px; color: white; padding: 12px; border-radius: 8px;
+            text-decoration: none; font-weight: bold; margin-bottom: 15px;
+            transition: transform 0.2s, opacity 0.3s;
+        }
+        .btn:hover { opacity: 0.9; transform: scale(1.02); }
+
+        .btn-email    { background-color: #D44638; }
+        .btn-whatsapp { background-color: var(--whatsapp-color); }
+        .btn-phone    { background-color: var(--phone-color); }
+        .btn-facebook { background-color: #1877F2; }
+
+        footer { background: var(--primary-color); color: white; text-align: center; padding: 20px; margin-top: 40px;}
+
+        @media (max-width: 768px) { .card { width: 100%; } }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>علي الصالح</h1>
-    <p>طالب في الإحصاء الرياضي والهندسة المعلوماتية</p>
-  </header>
 
-  <section>
-    <div class="card">
-      <h2>عنّي</h2>
-      <p>أطمح أن أصبح باحثًا في الذكاء الاصطناعي وعلوم البيانات، وأعمل على مشاريع تجمع بين الإحصاء والمعلوماتية.</p>
-    </div>
+    <header>
+        <img src="profile.jpg" alt="علي الصالح" class="profile-img">
+        <h1>علي الصالح</h1>
+        <p>طالب في الإحصاء الرياضي والهندسة المعلوماتية</p>
+    </header>
 
-    <div class="card">
-      <h2>مشاريعي</h2>
-      <ul>
-        <li>تحليل بيانات باستخدام Python وR</li>
-        <li>نماذج تعلم آلي للتنبؤ</li>
-        <li>موقع ويب شخصي للتعريف بأعمالي</li>
-      </ul>
-    </div>
+    <section>
+        <div class="card">
+            <h2><span class="material-icons">person</span> عنّي</h2>
+            <p>أطمح أن أصبح باحثًا في الذكاء الاصطناعي وعلوم البيانات، وأعمل حالياً على مشاريع تدمج بين التحليل الإحصائي والبرمجة.</p>
+        </div>
 
-    <div class="card">
-      <h2>تواصل معي</h2>
-      <a href="mailto:alialsalh1976@gmail.com" class="btn btn-email">
-        <span class="material-icons">email</span>
-        البريد الإلكتروني
-      </a>
+        <div class="card">
+            <h2><span class="material-icons">contact_mail</span> تواصل معي</h2>
+            
+            <a href="mailto:alialsalh1976@gmail.com" class="btn btn-email">
+                <span class="material-icons">email</span> البريد الإلكتروني
+            </a>
 
-      <a href="https://facebook.com/ali.w.alsaleh" class="btn btn-facebook">
-        <span class="material-icons">facebook</span>
-        فيسبوك
-      </a>
+            <a href="https://wa.me/963958438137" target="_blank" class="btn btn-whatsapp">
+                <span class="material-icons">chat</span> واتساب
+            </a>
 
-      <a href="https://linkedIn.com/in/ali" class="btn btn-linkedIn">
-        <span class="material-icons">person_add</span>
-        لينكدإن
-      </a>
-    </div>
-  </section>
+            <a href="tel:+963981946896" class="btn btn-phone">
+                <span class="material-icons">phone</span> اتصال هاتفي
+            </a>
 
-  <footer>
-    <p>© 2026 علي الصالح - جميع الحقوق محفوظة</p>
-  </footer>
+            <a href="https://facebook.com/ali.w.alsaleh" target="_blank" class="btn btn-facebook">
+                <span class="material-icons">facebook</span> فيسبوك
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 علي الصالح - جميع الحقوق محفوظة</p>
+    </footer>
+
 </body>
 </html>
+
